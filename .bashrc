@@ -39,7 +39,7 @@ fi
 #esac
 
 # Comment in the above and uncomment this below for a color prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1='\[\033[00;35m\][\A] ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -97,17 +97,10 @@ fi
 
 # For cscope
 export CSCOPE_EDITOR=gvim
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/utkarsh/prog/StochKit/StochKit2beta.1/libs/boost_1_42_0/stage/lib:/home/utkarsh/prog/scala/comfusy/t1/synthesis-plugin/lib
-export PATH=$PATH:/home/utkarsh/prog/StochKit/StochKit2beta.1/bin:/home/utkarsh/prog/StochKit/StochKit2beta.1
-export STOCHKIT_HOME=/home/utkarsh/prog/StochKit/StochKit2beta.1
-export SCALA_HOME=/usr/share/java
 
 echo -ne "\nYou" ;
 echo -ne "\033[33m should"; 
 echo -ne "\033[32m be" 
 echo -e "\033[31m working.\n"
 
-alias lpd='cd ~/prog/lpdstreaming/PLManage/execute'
-alias lpdout='cd /media/COMMON/lpdstreaming/output'
-alias synth='cd ~/prog/scala/comfusy/t1/synthesis-plugin'
 alias du1='du --max-depth=1'
