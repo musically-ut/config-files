@@ -51,6 +51,7 @@ let g:Tex_DefaultTargetFormat='pdf'
 
 " Favorite way to enter Normal model
 imap ;p <Esc>
+imap jj 
 
 " Taglist options
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
@@ -61,3 +62,4 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Vundle settings
 "
+set suffixes+=.annot,.cmo,.cmi,.cmx,.orig,.exe
