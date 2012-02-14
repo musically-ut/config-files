@@ -1,0 +1,8 @@
+Mrxvt.transparent:      True
+Mrxvt.foreground:       #ffffff
+Mrxvt.shading:          85
+Mrxvt.fading:           50
+Mrxvt.saveLines:        65534
+Mrxvt.xft:              1
+Mrxvt.xftFont:          Anonymous Pro
+Mrxvt.scrollTtyOutputInhibit:   True
