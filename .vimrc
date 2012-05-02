@@ -16,7 +16,6 @@ filetype plugin on
 filetype indent on
 syntax on
 set ai
-set smartindent
 set expandtab
 set linebreak
 set spell
@@ -62,4 +61,19 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Vundle settings
 "
+call pathogen#infect()
+
 set suffixes+=.annot,.cmo,.cmi,.cmx,.orig,.exe
+au BufNewFile,BufRead *.less set filetype=less
+
+" Do not show the '.orig' files
+let NERDTreeIgnore=['\~$', '.*\.orig']
+
+" map ; to :
+nnoremap ; :
+
+" Move through windows more easily
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
