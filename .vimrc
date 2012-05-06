@@ -70,7 +70,7 @@ au BufNewFile,BufRead *.less set filetype=less
 let NERDTreeIgnore=['\~$', '.*\.orig']
 
 " map ; to :
-nnoremap ; :
+" nnoremap ; :
 
 " Move through windows more easily
 nnoremap <C-h> <C-w>h

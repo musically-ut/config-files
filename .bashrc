@@ -105,3 +105,9 @@ echo -ne "\033[32m be"
 echo -e "\033[31m working.\n"
 
 alias du1='du --max-depth=1'
+
+export PERL_LOCAL_LIB_ROOT="/home/utkarsh/perl5";
+export PERL_MB_OPT="--install_base /home/utkarsh/perl5";
+export PERL_MM_OPT="INSTALL_BASE=/home/utkarsh/perl5";
+export PERL5LIB="/home/utkarsh/perl5/lib/perl5/x86_64-linux-thread-multi:/home/utkarsh/perl5/lib/perl5";
+export PATH="/home/utkarsh/perl5/bin:$PATH";
